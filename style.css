@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Abril Fatface", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ccc;
+}
+
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;padding: 0;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+
+ul li a .fa-brands{
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: 0.5s;
+    padding-right: 14px;
+}
+
+ul li a span{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+}
+
+ul li a{
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    padding-left: 20px;
+    text-align: left;
+    transform: rotate(-30deg) skew(25deg)
+    translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgb(0,0,0,0.5);
+}
+
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background-color: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgb(0,0,0,0.5);
+}
+
+ul li:hover .fa-brands{
+    color: #fff;
+}
+
+ul li:hover span{
+    color: #fff;
+}
+
+/* Instagram */
+
+ul li:hover:nth-child(1) a{
+    background: #e4405f;
+}
+
+ul li:hover:nth-child(1) a::before{
+    background: #d81c3f;
+}
+
+ul li:hover:nth-child(1) a::after{
+    background: #e40880;
+}
+
+/* Telegram */
+
+ul li:hover:nth-child(2) a{
+    background: #00aced;
+}
+
+ul li:hover:nth-child(2) a::before{
+    background: #097aa5;
+}
+
+ul li:hover:nth-child(2) a::after{
+    background: #53b9e0;
+}
+
+/* YouTube */
+
+ul li:hover:nth-child(3) a{
+    background: #de1f1f;
+}
+
+ul li:hover:nth-child(3) a::before{
+    background: #a90606;
+}
+
+ul li:hover:nth-child(3) a::after{
+    background: #ff4649;
+}
+
+/* Whatsapp */
+
+ul li:hover:nth-child(4) a{
+    background: #40e464;
+}
+
+ul li:hover:nth-child(4) a::before{
+    background: #199d35;
+}
+
+ul li:hover:nth-child(4) a::after{
+    background: #0ee00a;
+}
